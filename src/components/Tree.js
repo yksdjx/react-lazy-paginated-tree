@@ -72,6 +72,10 @@ class Tree extends Component<TreeProps, TreeState> {
     }
     node.expanded = !node.expanded;
     this.setBroadcastedState(state);
+    const { toggleCallback } = this.props;
+    if (toggleCallback) {
+      toggleCallback(e, node);
+    }
   };
 
   onKeyToggle = async (e: Event, node: Node): Promise<void> => {
@@ -84,6 +88,10 @@ class Tree extends Component<TreeProps, TreeState> {
     const state: TreeState = { ...this.state };
     node.selected = !node.selected;
     this.setBroadcastedState(state);
+    const { selectCallback } = this.props;
+    if (selectCallback) {
+      selectCallback(e, node);
+    }
   };
 
   onKeySelect = (e: Event, node: Node): void => {

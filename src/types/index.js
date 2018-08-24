@@ -14,6 +14,7 @@ export type Node = {
 export type Theme = {
   treeStyle: Object,
   bodyStyle: Object,
+  bodyTextStyle: Object,
   checkboxStyle: Object,
   checkboxIconStyle: Object,
   checkboxIconCheckedStyle: Object,
@@ -55,6 +56,8 @@ export type TreeProps = {
   onKeySelect?: Function,
   loadChildren?: Function,
   onUpdate?: Function,
+  selectCallback?: Function,
+  toggleCallback?: Function,
 };
 
 export type TreeNodeProps = {

@@ -61,6 +61,30 @@ The component accepts the following props:
 
 * `nodes: Array<Node>`: (**required**) A list of nodes that represent the top level of the tree
 
+Format (one node with one child):
+
+```
+{
+  id: 5,
+  name: '2018',
+  description: 'Current Year',
+  children: [
+    {
+      id: 6,
+      name: 'Q1',
+      description: 'Current Quarter',
+      children: [],
+      numChildren: 0,
+      expanded: false,
+      selected: false,
+    },
+  ],
+  numChildren: 1,
+  expanded: false,
+  selected: false,
+},
+```
+
 ##### Lazy Loading Props
 
 * `loadChildren: Function`: function to load children of a node, called with `(node: Node, pageLimit?: number)`. A parse method must be specified if the structure of children returned from this method doesn't match `Array<Node>`.
@@ -74,7 +98,12 @@ The component accepts the following props:
 
 * `onUpdate: Function`: function called with `(state: TreeState)` whenever the tree state changes. Can be used to hook into external data providers (i.e. with Redux).
 
-##### Functionality Overrides
+##### Callback Props
+
+* `toggleCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node expand/collapse event.
+* `selectCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node selection event.
+
+##### Functionality Overrides (Only use these if you want to override local component state)
 
 * `toggle: Function`: function called with `(e: Event, node: Node)` when node `<Expander />` is clicked.
 * `onKeyToggle: Function`: function called with `(e: Event, node: Node)` when node `<Expander />` keypress event is triggered.
@@ -174,6 +203,8 @@ export type TreeProps = {
   onKeySelect?: Function,
   loadChildren?: Function,
   onUpdate?: Function,
+  selectCallback?: Function,
+  toggleCallback?: Function,
 };
 ```
 
@@ -240,6 +271,7 @@ selected: boolean,
 export type Theme = {
 treeStyle: Object,
 bodyStyle: Object,
+bodyTextStyle: Object,
 checkboxStyle: Object,
 checkboxIconStyle: Object,
 checkboxIconCheckedStyle: Object,

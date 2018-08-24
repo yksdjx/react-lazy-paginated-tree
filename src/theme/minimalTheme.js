@@ -13,6 +13,10 @@ const theme: Theme = prefixer({
   bodyStyle: {
     padding: '0 5px',
   },
+  bodyTextStyle: {
+    padding: 0,
+    wordWrap: 'break-word',
+  },
   checkboxStyle: {
     width: 30,
     height: 30,
@@ -25,6 +29,7 @@ const theme: Theme = prefixer({
     fill: '#1A70BB',
   },
   expanderStyle: {
+    minWidth: '20px',
     width: '20px',
     display: 'inline-block',
     textAlign: 'center',
