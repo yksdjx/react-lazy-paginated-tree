@@ -33,11 +33,11 @@ Please ensure that these are included in your project.
 ```javascript
 'use strict';
 
-import React, { component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Tree, SampleTree } from 'react-lazy-paginated-tree';
 
-class ReactLazyPaginatedTree extends React.Component {
+class ReactLazyPaginatedTree extends Component {
   render() {
     return <Tree nodes={SampleTree} />;
   }
