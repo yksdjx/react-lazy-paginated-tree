@@ -212,7 +212,7 @@ export type TreeProps = {
 
 ```
 export type TreeState = {
-nodes: Array<Node>,
+  nodes: Array<Node>,
 };
 ```
 
@@ -220,24 +220,24 @@ nodes: Array<Node>,
 
 ```
 export type TreeNodeProps = {
-depth: number,
-node: Node,
-theme: Theme,
-indentWidth: number,
-List: any,
-ListItem: any,
-Expander: any,
-Checkbox: any,
-Body: any,
-Paginator: any,
-Loading: any,
-DepthPadding: any,
-loadMore: Function,
-onKeyLoadMore: Function,
-toggle: Function,
-onKeyToggle: Function,
-select: Function,
-onKeySelect: Function,
+  depth: number,
+  node: Node,
+  theme: Theme,
+  indentWidth: number,
+  List: any,
+  ListItem: any,
+  Expander: any,
+  Checkbox: any,
+  Body: any,
+  Paginator: any,
+  Loading: any,
+  DepthPadding: any,
+  loadMore: Function,
+  onKeyLoadMore: Function,
+  toggle: Function,
+  onKeyToggle: Function,
+  select: Function,
+  onKeySelect: Function,
 };
 ```
 
@@ -245,8 +245,8 @@ onKeySelect: Function,
 
 ```
 export type TreeNodeState = {
-expanderLoading: boolean,
-paginatorLoading: boolean,
+  expanderLoading: boolean,
+  paginatorLoading: boolean,
 };
 ```
 
@@ -254,14 +254,14 @@ paginatorLoading: boolean,
 
 ```
 export type Node = {
-id: string,
-name: string,
-description: string,
-children: Array<Node>,
-numChildren: number,
-page: number,
-expanded: boolean,
-selected: boolean,
+  id: string,
+  name: string,
+  description: string,
+  children: Array<Node>,
+  numChildren: number,
+  page: number,
+  expanded: boolean,
+  selected: boolean,
 };
 ```
 
@@ -269,19 +269,19 @@ selected: boolean,
 
 ```
 export type Theme = {
-treeStyle: Object,
-bodyStyle: Object,
-bodyTextStyle: Object,
-checkboxStyle: Object,
-checkboxIconStyle: Object,
-checkboxIconCheckedStyle: Object,
-expanderStyle: Object,
-listItemStyle: Object,
-paginatorStyle: Object,
-paginatorTextStyle: Object,
-loadingStyle: Object,
-loadingTextStyle: Object,
-listStyle: Object,
+  treeStyle: Object,
+  bodyStyle: Object,
+  bodyTextStyle: Object,
+  checkboxStyle: Object,
+  checkboxIconStyle: Object,
+  checkboxIconCheckedStyle: Object,
+  expanderStyle: Object,
+  listItemStyle: Object,
+  paginatorStyle: Object,
+  paginatorTextStyle: Object,
+  loadingStyle: Object,
+  loadingTextStyle: Object,
+  listStyle: Object,
 };
 ```
 
@@ -289,11 +289,11 @@ listStyle: Object,
 
 ```
 export type CheckboxProps = {
-checked: boolean,
-theme: Theme,
-node: Node,
-onChange: Function,
-onKeyPress: Function,
+  checked: boolean,
+  theme: Theme,
+  node: Node,
+  onChange: Function,
+  onKeyPress: Function,
 };
 ```
 
@@ -301,10 +301,10 @@ onKeyPress: Function,
 
 ```
 export type BodyProps = {
-theme: Theme,
-node: Node,
-onClick: Function,
-onKeyPress: Function,
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
 };
 ```
 
@@ -312,10 +312,10 @@ onKeyPress: Function,
 
 ```
 export type ExpanderProps = {
-theme: Theme,
-node: Node,
-onClick: Function,
-onKeyPress: Function,
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
 };
 ```
 
@@ -323,11 +323,11 @@ onKeyPress: Function,
 
 ```
 export type ListItemProps = {
-theme: Theme,
-node: Node,
-children: any,
-onClick: Function,
-onKeyPress: Function,
+  theme: Theme,
+  node: Node,
+  children: any,
+  onClick: Function,
+  onKeyPress: Function,
 };
 ```
 
@@ -335,9 +335,9 @@ onKeyPress: Function,
 
 ```
 export type ListProps = {
-theme: Theme,
-node: Node,
-children: any,
+  theme: Theme,
+  node: Node,
+  children: any,
 };
 ```
 
@@ -345,8 +345,8 @@ children: any,
 
 ```
 export type LoadingProps = {
-theme: Theme,
-node: Node,
+  theme: Theme,
+  node: Node,
 };
 ```
 
@@ -354,9 +354,9 @@ node: Node,
 
 ```
 export type DepthPaddingProps = {
-indentWidth: number,
-depth: number,
-children: any,
+  indentWidth: number,
+  depth: number,
+  children: any,
 };
 ```
 

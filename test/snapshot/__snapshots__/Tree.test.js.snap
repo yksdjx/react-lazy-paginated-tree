@@ -65,17 +65,20 @@ exports[`allows for method overrides 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -137,7 +140,14 @@ exports[`allows for method overrides 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2017
            
           <i>
@@ -145,7 +155,7 @@ exports[`allows for method overrides 1`] = `
             Last Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -161,528 +171,7 @@ exports[`allows for method overrides 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-            focusable="false"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q2
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q3
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q4
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
   <div
     className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
@@ -726,17 +215,20 @@ exports[`allows for method overrides 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -798,7 +290,14 @@ exports[`allows for method overrides 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2018
            
           <i>
@@ -806,7 +305,7 @@ exports[`allows for method overrides 1`] = `
             Current Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -822,136 +321,7 @@ exports[`allows for method overrides 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Current Quarter
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
 </ul>
 `;
@@ -1006,17 +376,20 @@ exports[`renders a sample tree 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -1078,7 +451,14 @@ exports[`renders a sample tree 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2017
            
           <i>
@@ -1086,7 +466,7 @@ exports[`renders a sample tree 1`] = `
             Last Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -1102,528 +482,7 @@ exports[`renders a sample tree 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-            focusable="false"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q2
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q3
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q4
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
   <div
     className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
@@ -1667,17 +526,20 @@ exports[`renders a sample tree 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -1739,7 +601,14 @@ exports[`renders a sample tree 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2018
            
           <i>
@@ -1747,7 +616,7 @@ exports[`renders a sample tree 1`] = `
             Current Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -1763,136 +632,7 @@ exports[`renders a sample tree 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Current Quarter
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
 </ul>
 `;
@@ -1947,17 +687,20 @@ exports[`renders the correct pagination structure 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -2019,7 +762,14 @@ exports[`renders the correct pagination structure 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2017
            
           <i>
@@ -2027,7 +777,7 @@ exports[`renders the correct pagination structure 1`] = `
             Last Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -2043,528 +793,7 @@ exports[`renders the correct pagination structure 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-            focusable="false"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q2
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q3
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q4
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
   <div
     className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
@@ -2608,17 +837,20 @@ exports[`renders the correct pagination structure 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -2680,7 +912,14 @@ exports[`renders the correct pagination structure 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2018
            
           <i>
@@ -2688,7 +927,7 @@ exports[`renders the correct pagination structure 1`] = `
             Current Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -2704,136 +943,7 @@ exports[`renders the correct pagination structure 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Current Quarter
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
 </ul>
 `;
@@ -2888,17 +998,20 @@ exports[`renders with a different indent width 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -2960,7 +1073,14 @@ exports[`renders with a different indent width 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2017
            
           <i>
@@ -2968,7 +1088,7 @@ exports[`renders with a different indent width 1`] = `
             Last Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -2984,528 +1104,7 @@ exports[`renders with a different indent width 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 40,
-              }
-            }
-          />
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-            focusable="false"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 40,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q2
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 40,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q3
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 40,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q4
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
   <div
     className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
@@ -3549,17 +1148,20 @@ exports[`renders with a different indent width 1`] = `
         Object {
           "display": "inline-block",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -3621,7 +1223,14 @@ exports[`renders with a different indent width 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2018
            
           <i>
@@ -3629,7 +1238,7 @@ exports[`renders with a different indent width 1`] = `
             Current Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -3645,136 +1254,7 @@ exports[`renders with a different indent width 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "backgroundColor": "#f3f3f3",
-              "margin": "2px 0",
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 40,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={Object {}}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={Object {}}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Current Quarter
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
 </ul>
 `;
@@ -3828,17 +1308,20 @@ exports[`renders with a different theme 1`] = `
           "display": "inline-block",
           "fill": "black",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -3910,7 +1393,14 @@ exports[`renders with a different theme 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2017
            
           <i>
@@ -3918,7 +1408,7 @@ exports[`renders with a different theme 1`] = `
             Last Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -3934,564 +1424,7 @@ exports[`renders with a different theme 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "margin": "2px 0",
-              "padding": "0 8px",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-            focusable="false"
-            onClick={[Function]}
-            onKeyPress={[Function]}
-            style={
-              Object {
-                "display": "inline-block",
-                "fill": "black",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={
-              Object {
-                "height": "30px",
-                "width": "30px",
-              }
-            }
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={
-                  Object {
-                    "fill": "black",
-                    "fontSize": "20px",
-                  }
-                }
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0 5px",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "margin": "2px 0",
-              "padding": "0 8px",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "fill": "black",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={
-              Object {
-                "height": "30px",
-                "width": "30px",
-              }
-            }
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={
-                  Object {
-                    "fill": "black",
-                    "fontSize": "20px",
-                  }
-                }
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0 5px",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q2
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "margin": "2px 0",
-              "padding": "0 8px",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "fill": "black",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={
-              Object {
-                "height": "30px",
-                "width": "30px",
-              }
-            }
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={
-                  Object {
-                    "fill": "black",
-                    "fontSize": "20px",
-                  }
-                }
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0 5px",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q3
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "margin": "2px 0",
-              "padding": "0 8px",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "fill": "black",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={
-              Object {
-                "height": "30px",
-                "width": "30px",
-              }
-            }
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={
-                  Object {
-                    "fill": "black",
-                    "fontSize": "20px",
-                  }
-                }
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0 5px",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q4
-                 
-                <i>
-                  (
-                  Description
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
   <div
     className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
@@ -4534,17 +1467,20 @@ exports[`renders with a different theme 1`] = `
           "display": "inline-block",
           "fill": "black",
           "marginRight": "0",
+          "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
         }
       }
+      tabIndex={0}
+      type="button"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
       />
       <path
-        d="M0 0h24v24H0V0z"
+        d="M0 0h24v24H0z"
         fill="none"
       />
     </svg>
@@ -4616,7 +1552,14 @@ exports[`renders with a different theme 1`] = `
       <span
         className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
       >
-        <span>
+        <p
+          style={
+            Object {
+              "padding": "0",
+              "wordWrap": "break-word",
+            }
+          }
+        >
           2018
            
           <i>
@@ -4624,7 +1567,7 @@ exports[`renders with a different theme 1`] = `
             Current Year
             )
           </i>
-        </span>
+        </p>
       </span>
     </div>
     <span
@@ -4640,145 +1583,7 @@ exports[`renders with a different theme 1`] = `
       }
     }
   >
-    <span>
-      <div>
-        <div
-          className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          style={
-            Object {
-              "margin": "2px 0",
-              "padding": "0 8px",
-            }
-          }
-          tabIndex="0"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": 20,
-              }
-            }
-          />
-          <span
-            style={
-              Object {
-                "display": "inline-block",
-                "fill": "black",
-                "marginRight": "0",
-                "textAlign": "center",
-                "width": "20px",
-              }
-            }
-          />
-          <span
-            className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            style={
-              Object {
-                "height": "30px",
-                "width": "30px",
-              }
-            }
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label-36"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-15"
-                focusable="false"
-                style={
-                  Object {
-                    "fill": "black",
-                    "fontSize": "20px",
-                  }
-                }
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-              <input
-                checked={false}
-                className="MuiSwitchBase-input-30"
-                onChange={[Function]}
-                tabIndex={0}
-                type="checkbox"
-              />
-            </span>
-            <span
-              className="MuiTouchRipple-root-37"
-            />
-          </span>
-          <div
-            className="MuiListItemText-root-44"
-            role="button"
-            style={
-              Object {
-                "padding": "0 5px",
-              }
-            }
-            tabIndex={0}
-          >
-            <span
-              className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
-            >
-              <span>
-                Q1
-                 
-                <i>
-                  (
-                  Current Quarter
-                  )
-                </i>
-              </span>
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root-37"
-          />
-        </div>
-        <ul
-          className="MuiList-root-75 MuiList-padding-76"
-          style={
-            Object {
-              "paddingBottom": "0",
-              "paddingTop": "0",
-            }
-          }
-        >
-          <span />
-        </ul>
-      </div>
-    </span>
+    <span />
   </ul>
 </ul>
 `;
