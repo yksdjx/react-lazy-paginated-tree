@@ -74,7 +74,6 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
     if (node.expanded && hasChildren(node)) {
       children = node.children.map((childNode: Node) => (
         <TreeNode
-          key={childNode.id}
           depth={depth + 1}
           node={childNode}
           theme={theme}

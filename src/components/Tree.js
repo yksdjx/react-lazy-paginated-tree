@@ -125,7 +125,6 @@ class Tree extends Component<TreeProps, TreeState> {
       <ul style={{ ...theme.treeStyle, ...style }}>
         {nodes.map((node: Node) => (
           <TreeNode
-            key={node.id}
             depth={DEFAULT_DEPTH}
             node={node}
             theme={theme}
