@@ -31,12 +31,11 @@ class Tree extends Component<TreeProps, TreeState> {
     this.loadChildren = props.loadChildren || this.loadChildren;
   }
 
-  componentDidUpdate = (nextProps: TreeProps) => {
-    const { nodes } = this.props;
-    const { parse } = nextProps;
-    if (!deepEqual(nodes, nextProps.nodes)) {
+  componentDidUpdate = (prevProps: TreeProps) => {
+    const { nodes, parse } = this.props;
+    if (!deepEqual(prevProps.nodes, nodes)) {
       this.setState({
-        nodes: parse ? parse(nextProps.nodes) : nextProps.nodes,
+        nodes: parse ? parse(nodes) : nodes,
       });
     }
   };
