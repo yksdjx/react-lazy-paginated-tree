@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import deepEqual from 'fast-deep-equal';
 import type { Node, TreeNodeProps, TreeNodeState } from '../types';
 import { hasChildren, hasLoadedChildren, shouldShowMore } from '../util';
 
@@ -9,6 +10,14 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   state = {
     expanderLoading: false,
     paginatorLoading: false,
+  };
+
+  componentDidUpdate = (prevProps: TreeNodeProps) => {
+    const { node } = this.props;
+    if (!deepEqual(prevProps.node, node)) {
+      console.log('TreeNode Updating');
+      this.forceUpdate();
+    }
   };
 
   stopPropagation = (e: Event) => {
