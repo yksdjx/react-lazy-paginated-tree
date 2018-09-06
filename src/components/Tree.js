@@ -30,6 +30,11 @@ class Tree extends Component<TreeProps, TreeState> {
     this.loadChildren = props.loadChildren || this.loadChildren;
   }
 
+  componentDidUpdate = (nextProps: TreeProps) => {
+    const { nodes, parse } = nextProps;
+    this.setState({ nodes: parse ? parse(nodes) : nodes });
+  };
+
   setBroadcastedState = (state: TreeState) => {
     this.setState(state);
     const { onUpdate } = this.props;
@@ -125,6 +130,7 @@ class Tree extends Component<TreeProps, TreeState> {
       <ul style={{ ...theme.treeStyle, ...style }}>
         {nodes.map((node: Node) => (
           <TreeNode
+            key={node.id}
             depth={DEFAULT_DEPTH}
             node={node}
             theme={theme}
