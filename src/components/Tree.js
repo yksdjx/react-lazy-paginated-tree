@@ -1,10 +1,10 @@
 // @flow
 
 import React, { Component } from 'react';
+import deepEqual from 'fast-deep-equal';
 import type { Node, TreeState, TreeProps, Event } from '../types';
 import { hasChildren, isFullyFetched } from '../util';
 import TreeNode from './TreeNode';
-
 import { defaultTheme } from '../theme';
 import DefaultList from './List';
 import DefaultListItem from './ListItem';
@@ -29,6 +29,15 @@ class Tree extends Component<TreeProps, TreeState> {
     };
     this.loadChildren = props.loadChildren || this.loadChildren;
   }
+
+  componentDidUpdate = (prevProps: TreeProps) => {
+    const { nodes, parse } = this.props;
+    if (!deepEqual(prevProps.nodes, nodes)) {
+      this.setState({
+        nodes: parse ? parse(nodes) : nodes,
+      });
+    }
+  };
 
   setBroadcastedState = (state: TreeState) => {
     this.setState(state);
