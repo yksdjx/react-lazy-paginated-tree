@@ -1,7 +1,6 @@
 // @flow
 
 import React, { Component } from 'react';
-import deepEqual from 'fast-deep-equal';
 import type { Node, TreeState, TreeProps, Event } from '../types';
 import { hasChildren, isFullyFetched } from '../util';
 import TreeNode from './TreeNode';
@@ -30,15 +29,6 @@ class Tree extends Component<TreeProps, TreeState> {
     };
     this.loadChildren = props.loadChildren || this.loadChildren;
   }
-
-  componentDidUpdate = (prevProps: TreeProps) => {
-    const { nodes, parse } = this.props;
-    if (!deepEqual(prevProps.nodes, nodes)) {
-      this.setState({
-        nodes: parse ? parse(nodes) : nodes,
-      });
-    }
-  };
 
   setBroadcastedState = (state: TreeState) => {
     this.setState(state);
@@ -113,6 +103,7 @@ class Tree extends Component<TreeProps, TreeState> {
   render() {
     const {
       style,
+      className,
       theme = defaultTheme,
       indentWidth,
       toggle,
@@ -132,7 +123,7 @@ class Tree extends Component<TreeProps, TreeState> {
     const { nodes } = this.state;
 
     return (
-      <ul style={{ ...theme.treeStyle, ...style }}>
+      <ul style={{ ...theme.treeStyle, ...style }} className={className}>
         {nodes.map((node: Node) => (
           <TreeNode
             key={node.id}

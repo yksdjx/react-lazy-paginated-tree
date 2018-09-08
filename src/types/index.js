@@ -40,6 +40,7 @@ export type TreeProps = {
   pageLimit?: number,
   parse?: Function,
   style?: Object, // equivalent to overriding theme.treeStyle
+  className?: string | Object,
   theme?: Theme,
   indentWidth?: number,
   List?: any,

@@ -11,7 +11,7 @@ const Checkbox = ({ node, theme }: CheckboxProps) => (
     style={theme.checkboxStyle}
     type="checkbox"
     tabIndex={0}
-    checked={node.selected}
+    checked={Boolean(node.selected)}
     onChange={() => {}}
     color="primary"
     icon={<CheckBoxOutlineBlankIcon style={theme.checkboxIconStyle} />}
