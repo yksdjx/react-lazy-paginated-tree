@@ -11,17 +11,17 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
     paginatorLoading: false,
   };
 
-  stopPropagation = (e: Event) => {
-    e.stopPropagation();
-  };
-
+  // node "toggle" handler to set expander loading states and prevent
+  // multiple "toggle" actions from being triggered simultaneously.
+  // currently relies on stopPropagation so that toggling doesn't trigger
+  // parent level select handler but this may change in future versions
   handleToggle = async (
     e: Event,
     node: Node,
     callable: Function,
     disabled: boolean,
   ) => {
-    this.stopPropagation(e);
+    e.stopPropagation();
     if (!disabled) {
       if (!node.expanded && !hasLoadedChildren(node)) {
         this.setState({ expanderLoading: true });
@@ -33,6 +33,8 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
     }
   };
 
+  // pagination "load more" handler to set paginator loading states and
+  // prevent multiple "load more" actions from being triggered simultaneously.
   handleLoadMore = async (
     e: Event,
     node: Node,
@@ -45,6 +47,24 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       this.setState({ paginatorLoading: false });
     }
   };
+
+  // render children if they exist and the node is expanded
+  // ensure that depth is incremented for hierarchical indentation
+  renderChildren() {
+    const { depth, node }: TreeNodeProps = this.props;
+    let children = [];
+    if (node.expanded && hasChildren(node)) {
+      children = node.children.map((childNode: Node) => (
+        <TreeNode
+          {...this.props}
+          key={childNode.id}
+          depth={depth + 1}
+          node={childNode}
+        />
+      ));
+    }
+    return children;
+  }
 
   render() {
     const {
@@ -67,44 +87,22 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       Loading,
       DepthPadding,
     }: TreeNodeProps = this.props;
-
     const { expanderLoading, paginatorLoading } = this.state;
 
-    let children = [];
-    if (node.expanded && hasChildren(node)) {
-      children = node.children.map((childNode: Node) => (
-        <TreeNode
-          key={childNode.id}
-          depth={depth + 1}
-          node={childNode}
-          theme={theme}
-          indentWidth={indentWidth}
-          loadMore={loadMore}
-          onKeyLoadMore={onKeyLoadMore}
-          toggle={toggle}
-          onKeyToggle={onKeyToggle}
-          select={select}
-          onKeySelect={onKeySelect}
-          List={List}
-          ListItem={ListItem}
-          Expander={Expander}
-          Checkbox={Checkbox}
-          Body={Body}
-          Paginator={Paginator}
-          Loading={Loading}
-          DepthPadding={DepthPadding}
-        />
-      ));
-    }
+    const children = this.renderChildren();
+
     return (
       <React.Fragment>
+        {/* ListItem: Overridable container component */}
         <ListItem
           theme={theme}
           node={node}
           onClick={e => select(e, node)}
           onKeyPress={e => onKeySelect(e, node)}
         >
+          {/* DepthPadding: Overridable Component for hierarchical indentation */}
           <DepthPadding indentWidth={indentWidth} depth={depth} />
+          {/* Expander: Overridable Component for toggling expanded/collapsed state */}
           {hasChildren(node) ? (
             <Expander
               theme={theme}
@@ -117,20 +115,28 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
           ) : (
             <span style={theme.expanderStyle} />
           )}
+          {/* CheckBox: Overridable Component for visualizing selection state */}
           <Checkbox theme={theme} node={node} />
+          {/* Body: Overridable node body  */}
           <Body theme={theme} node={node} />
         </ListItem>
+        {/* List: Overridable container component for node children */}
         <List theme={theme}>
+          {/* Animation for node expand / collapse */}
           <ReactCSSTransitionGroup
             transitionName="slide"
             transitionEnterTimeout={200}
             transitionLeaveTimeout={200}
           >
+            {/* Loading: Overridable loading bar for pagination */}
             {expanderLoading && <Loading theme={theme} node={node} />}
             {children.length > 0 && (
               <div key={node.id}>
+                {/* render children here */}
                 {children}
+                {/* Loading: Overridable loading bar for pagination */}
                 {paginatorLoading && <Loading theme={theme} node={node} />}
+                {/* Paginator: Overridable "load more" pagination button */}
                 {!paginatorLoading &&
                   shouldShowMore(node) && (
                     <Paginator

@@ -5,6 +5,8 @@ import deepEqual from 'fast-deep-equal';
 import type { Node, TreeState, TreeProps, Event } from '../types';
 import { hasChildren, isFullyFetched } from '../util';
 import TreeNode from './TreeNode';
+
+// default components and theme
 import { defaultTheme } from '../theme';
 import DefaultList from './List';
 import DefaultListItem from './ListItem';
@@ -15,12 +17,15 @@ import DefaultPaginator from './Paginator';
 import DefaultLoading from './Loading';
 import DefaultDepthPadding from './DepthPadding';
 
+// open/close animation for ReactCSSTransitionGroup
 import '../animations/index.css';
 
+// depth and indent width determine hierarchical indentation
 const DEFAULT_INDENT_WIDTH = 20;
 const DEFAULT_DEPTH = 0;
 
 class Tree extends Component<TreeProps, TreeState> {
+  // initialize state and allow for loadChildren override (for pagination)
   constructor(props: TreeProps) {
     super(props);
     const { nodes, parse } = props;
@@ -30,6 +35,7 @@ class Tree extends Component<TreeProps, TreeState> {
     this.loadChildren = props.loadChildren || this.loadChildren;
   }
 
+  // ensure that deep updates to the tree nodes trigger a re-render
   componentDidUpdate = (prevProps: TreeProps) => {
     const { nodes, parse } = this.props;
     if (!deepEqual(prevProps.nodes, nodes)) {
@@ -39,6 +45,7 @@ class Tree extends Component<TreeProps, TreeState> {
     }
   };
 
+  // set the state but also broadcast the updated state via onUpdate
   setBroadcastedState = (state: TreeState) => {
     this.setState(state);
     const { onUpdate } = this.props;
@@ -47,11 +54,14 @@ class Tree extends Component<TreeProps, TreeState> {
     }
   };
 
+  // default loadChildren implementation to be overridden via props
   loadChildren = async (
     node: Node,
     pageLimit?: number, // eslint-disable-line
   ): Promise<Array<Node>> => node.children;
 
+  // handler for paginating on a list of siblings. Determine if more siblings need to be
+  // loaded and append them to the end of the list
   loadMore = async (e: Event, node: Node) => {
     const { pageLimit, parse } = this.props;
     const state: TreeState = { ...this.state };
@@ -71,6 +81,9 @@ class Tree extends Component<TreeProps, TreeState> {
     }
   };
 
+  // handler for expanding / collapsing a node. Determine if children need to be
+  // loaded and set expanded state.
+  // fires toggleCallback() prop with event and node
   toggle = async (e: Event, node: Node): Promise<void> => {
     const { pageLimit, parse } = this.props;
     const state: TreeState = { ...this.state };
@@ -93,6 +106,8 @@ class Tree extends Component<TreeProps, TreeState> {
     }
   };
 
+  // handler for selecting a node.
+  // fires selectCallback() prop with event and node
   select = (e: Event, node: Node): void => {
     const state: TreeState = { ...this.state };
     node.selected = !node.selected;
@@ -133,9 +148,9 @@ class Tree extends Component<TreeProps, TreeState> {
 
     return (
       <ul style={{ ...theme.treeStyle, ...style }} className={className}>
-        {nodes.map((node: Node) => (
+        {nodes.map((node: Node, index: number) => (
           <TreeNode
-            key={node.id}
+            key={node.id || index}
             depth={DEFAULT_DEPTH}
             node={node}
             theme={theme}
