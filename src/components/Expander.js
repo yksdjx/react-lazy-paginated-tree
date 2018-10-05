@@ -2,7 +2,7 @@
 
 import React from 'react';
 import MUIListItemIcon from '@material-ui/core/ListItemIcon';
-import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import type { ExpanderProps } from '../types';
 
@@ -14,7 +14,7 @@ const Expander = ({ theme, onClick, onKeyPress, expanded }: ExpanderProps) => (
     tabIndex={0}
     type="button"
   >
-    {expanded ? <KeyboardArrowDown /> : <KeyboardArrowUp />}
+    {expanded ? <KeyboardArrowDown /> : <KeyboardArrowRight />}
   </MUIListItemIcon>
 );
 
