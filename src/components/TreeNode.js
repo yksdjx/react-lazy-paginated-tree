@@ -1,14 +1,90 @@
 // @flow
 
 import React, { Component } from 'react';
+import deepEquals from 'fast-deep-equal';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import type { Node, TreeNodeProps, TreeNodeState } from '../types';
-import { hasChildren, hasLoadedChildren, shouldShowMore } from '../util';
+import type { Node, TreeNodeProps, TreeNodeState, Event } from '../types';
+import { hasChildren, shouldShowMore, isFullyFetched } from '../util';
 
 class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
-  state = {
-    expanderLoading: false,
-    paginatorLoading: false,
+  constructor(props: TreeNodeProps) {
+    super(props);
+    const { node } = props;
+    this.state = {
+      expanderLoading: false,
+      paginatorLoading: false,
+      expanded: node.expanded,
+      selected: node.selected,
+      children: node.children,
+      page: node.page,
+    };
+  }
+
+  shouldComponentUpdate(nextProps: TreeNodeProps, nextState: TreeNodeState) {
+    return !deepEquals(this.state, nextState);
+  }
+
+  // handler for paginating on a list of siblings. Determine if more siblings need to be
+  // loaded and append them to the end of the list
+  loadMore = async (e: Event, node: Node) => {
+    const { pageLimit, parse, loadChildren } = this.props;
+    const state: TreeNodeState = { ...this.state };
+    if (!isFullyFetched(node, state.children.length) && pageLimit) {
+      state.page += 1;
+      const loadedChildren = await loadChildren(node, pageLimit);
+      state.children = state.children.concat(
+        parse ? parse(loadedChildren) : loadedChildren,
+      );
+    }
+    this.setState(state);
+  };
+
+  onKeyLoadMore = async (e: Event, node: Node): Promise<void> => {
+    if (e.key === 'Enter') {
+      await this.loadMore(e, node);
+    }
+  };
+
+  // handler for expanding / collapsing a node. Determine if children need to be
+  // loaded and set expanded state.
+  // fires toggleCallback() prop with event and node
+  toggle = async (e: Event, node: Node): Promise<void> => {
+    const { pageLimit, parse, loadChildren, toggleCallback } = this.props;
+    const state: TreeNodeState = { ...this.state };
+    if (state.children.length === 0 && hasChildren(node)) {
+      state.page += 1;
+      const loadedChildren = await loadChildren(node, pageLimit);
+      state.children = parse ? parse(loadedChildren) : loadedChildren;
+    }
+    state.expanded = !state.expanded;
+    this.setState(state);
+    if (toggleCallback) {
+      toggleCallback(e, node, state);
+    }
+  };
+
+  onKeyToggle = async (e: Event, node: Node): Promise<void> => {
+    if (e.key === 'Enter') {
+      await this.toggle(e, node);
+    }
+  };
+
+  // handler for selecting a node.
+  // fires selectCallback() prop with event and node
+  select = (e: Event, node: Node): void => {
+    const { selectCallback } = this.props;
+    const state: TreeNodeState = { ...this.state };
+    state.selected = !state.selected;
+    this.setState(state);
+    if (selectCallback) {
+      selectCallback(e, node, state);
+    }
+  };
+
+  onKeySelect = (e: Event, node: Node): void => {
+    if (e.key === 'Enter') {
+      this.select(e, node);
+    }
   };
 
   // node "toggle" handler to set expander loading states and prevent
@@ -23,7 +99,8 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   ) => {
     e.stopPropagation();
     if (!disabled) {
-      if (!node.expanded && !hasLoadedChildren(node)) {
+      const { expanded, children }: TreeNodeState = this.state;
+      if (!expanded && children.length === 0) {
         this.setState({ expanderLoading: true });
         await callable(e, node);
         this.setState({ expanderLoading: false });
@@ -52,18 +129,19 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   // ensure that depth is incremented for hierarchical indentation
   renderChildren() {
     const { depth, node }: TreeNodeProps = this.props;
-    let children = [];
-    if (node.expanded && hasChildren(node)) {
-      children = node.children.map((childNode: Node) => (
+    const { expanded, children }: TreeNodeState = this.state;
+    let childComponents = [];
+    if (expanded && hasChildren(node)) {
+      childComponents = children.map((childNode: Node, index: number) => (
         <TreeNode
           {...this.props}
-          key={childNode.id}
+          key={childNode.id || index}
           depth={depth + 1}
           node={childNode}
         />
       ));
     }
-    return children;
+    return childComponents;
   }
 
   render() {
@@ -72,12 +150,6 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       node,
       theme,
       indentWidth,
-      loadMore,
-      onKeyLoadMore,
-      toggle,
-      onKeyToggle,
-      select,
-      onKeySelect,
       List,
       ListItem,
       Expander,
@@ -87,7 +159,12 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       Loading,
       DepthPadding,
     }: TreeNodeProps = this.props;
-    const { expanderLoading, paginatorLoading } = this.state;
+    const {
+      expanderLoading,
+      paginatorLoading,
+      expanded,
+      selected,
+    } = this.state;
 
     const children = this.renderChildren();
 
@@ -97,8 +174,8 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
         <ListItem
           theme={theme}
           node={node}
-          onClick={e => select(e, node)}
-          onKeyPress={e => onKeySelect(e, node)}
+          onClick={e => this.select(e, node)}
+          onKeyPress={e => this.onKeySelect(e, node)}
         >
           {/* DepthPadding: Overridable Component for hierarchical indentation */}
           <DepthPadding indentWidth={indentWidth} depth={depth} />
@@ -107,16 +184,19 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
             <Expander
               theme={theme}
               node={node}
-              onClick={e => this.handleToggle(e, node, toggle, expanderLoading)}
-              onKeyPress={e =>
-                this.handleToggle(e, node, onKeyToggle, expanderLoading)
+              onClick={e =>
+                this.handleToggle(e, node, this.toggle, expanderLoading)
               }
+              onKeyPress={e =>
+                this.handleToggle(e, node, this.onKeyToggle, expanderLoading)
+              }
+              expanded={expanded}
             />
           ) : (
             <span style={theme.expanderStyle} />
           )}
           {/* CheckBox: Overridable Component for visualizing selection state */}
-          <Checkbox theme={theme} node={node} />
+          <Checkbox theme={theme} node={node} selected={selected} />
           {/* Body: Overridable node body  */}
           <Body theme={theme} node={node} />
         </ListItem>
@@ -131,25 +211,30 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
             {/* Loading: Overridable loading bar for pagination */}
             {expanderLoading && <Loading theme={theme} node={node} />}
             {children.length > 0 && (
-              <div key={node.id}>
+              <div>
                 {/* render children here */}
                 {children}
                 {/* Loading: Overridable loading bar for pagination */}
                 {paginatorLoading && <Loading theme={theme} node={node} />}
                 {/* Paginator: Overridable "load more" pagination button */}
                 {!paginatorLoading &&
-                  shouldShowMore(node) && (
+                  shouldShowMore(node, children.length) && (
                     <Paginator
                       theme={theme}
                       node={node}
                       onClick={e =>
-                        this.handleLoadMore(e, node, loadMore, paginatorLoading)
+                        this.handleLoadMore(
+                          e,
+                          node,
+                          this.loadMore,
+                          paginatorLoading,
+                        )
                       }
                       onKeyPress={e =>
                         this.handleLoadMore(
                           e,
                           node,
-                          onKeyLoadMore,
+                          this.onKeyLoadMore,
                           paginatorLoading,
                         )
                       }

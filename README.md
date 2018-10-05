@@ -103,13 +103,6 @@ Format (one node with one child):
 * `toggleCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node expand/collapse event.
 * `selectCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node selection event.
 
-##### Functionality Overrides (Only use these if you want to override local component state)
-
-* `toggle: Function`: function called with `(e: Event, node: Node)` when node `<Expander />` is clicked.
-* `onKeyToggle: Function`: function called with `(e: Event, node: Node)` when node `<Expander />` keypress event is triggered.
-* `select: Function`: function called with `(e: Event, node: Node)` when node is clicked.
-* `onKeySelect: Function`: function called with `(e: Event, node: Node)` when node keypress event is triggered.
-
 ##### Style Overrides
 
 * `theme: Theme`: The easiest way to add custom styling. Simply provide a `theme: Theme` javascript styles object override the default theme.
@@ -187,6 +180,7 @@ export type TreeProps = {
   pageLimit?: number,
   parse?: Function,
   style?: Object, // equivalent to overriding theme.treeStyle
+  className?: string | Object,
   theme?: Theme,
   indentWidth?: number,
   List?: any,
@@ -202,7 +196,6 @@ export type TreeProps = {
   select?: Function,
   onKeySelect?: Function,
   loadChildren?: Function,
-  onUpdate?: Function,
   selectCallback?: Function,
   toggleCallback?: Function,
 };
@@ -232,12 +225,11 @@ export type TreeNodeProps = {
   Paginator: any,
   Loading: any,
   DepthPadding: any,
-  loadMore: Function,
-  onKeyLoadMore: Function,
-  toggle: Function,
-  onKeyToggle: Function,
-  select: Function,
-  onKeySelect: Function,
+  loadChildren: Function,
+  parse: ?Function,
+  pageLimit: ?number,
+  selectCallback?: Function,
+  toggleCallback?: Function,
 };
 ```
 
@@ -247,6 +239,10 @@ export type TreeNodeProps = {
 export type TreeNodeState = {
   expanderLoading: boolean,
   paginatorLoading: boolean,
+  expanded: boolean,
+  selected: boolean,
+  children: Array<Node>,
+  page: number,
 };
 ```
 
@@ -294,6 +290,7 @@ export type CheckboxProps = {
   node: Node,
   onChange: Function,
   onKeyPress: Function,
+  selected: boolean,
 };
 ```
 
@@ -316,6 +313,7 @@ export type ExpanderProps = {
   node: Node,
   onClick: Function,
   onKeyPress: Function,
+  expanded: boolean,
 };
 ```
 

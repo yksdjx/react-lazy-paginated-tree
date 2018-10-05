@@ -56,7 +56,6 @@ export type TreeProps = {
   select?: Function,
   onKeySelect?: Function,
   loadChildren?: Function,
-  onUpdate?: Function,
   selectCallback?: Function,
   toggleCallback?: Function,
 };
@@ -74,17 +73,20 @@ export type TreeNodeProps = {
   Paginator: any,
   Loading: any,
   DepthPadding: any,
-  loadMore: Function,
-  onKeyLoadMore: Function,
-  toggle: Function,
-  onKeyToggle: Function,
-  select: Function,
-  onKeySelect: Function,
+  loadChildren: Function,
+  parse: ?Function,
+  pageLimit: ?number,
+  selectCallback?: Function,
+  toggleCallback?: Function,
 };
 
 export type TreeNodeState = {
   expanderLoading: boolean,
   paginatorLoading: boolean,
+  expanded: boolean,
+  selected: boolean,
+  children: Array<Node>,
+  page: number,
 };
 
 export type CheckboxProps = {
@@ -93,6 +95,7 @@ export type CheckboxProps = {
   node: Node,
   onChange: Function,
   onKeyPress: Function,
+  selected: boolean,
 };
 
 export type BodyProps = {
@@ -107,6 +110,7 @@ export type ExpanderProps = {
   node: Node,
   onClick: Function,
   onKeyPress: Function,
+  expanded: boolean,
 };
 
 export type ListItemProps = {
