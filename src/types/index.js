@@ -58,6 +58,7 @@ export type TreeProps = {
   loadChildren?: Function,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 
 export type TreeNodeProps = {
@@ -78,6 +79,7 @@ export type TreeNodeProps = {
   pageLimit: ?number,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 
 export type TreeNodeState = {

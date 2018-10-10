@@ -8,17 +8,19 @@ import { hasChildren, shouldShowMore, isFullyFetched } from '../util';
 
 class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   // Each TreeNode contains its own state, but props are the real
-  // source of truth so we need to ensure that important prop changes
-  // (selected, expanded, children) are also reflected in the local state.
+  // source of truth (unless usesLocalState === true) so we need
+  // to ensure that important prop changes (selected, expanded, children)
+  // are also reflected in the local state.
   static getDerivedStateFromProps(
-    { node }: TreeNodeProps,
+    { node, useLocalState }: TreeNodeProps,
     state: TreeNodeState,
   ) {
     const { selected, expanded, children } = state;
     if (
-      selected !== node.selected ||
-      expanded !== node.expanded ||
-      !deepEquals(children, node.children)
+      useLocalState &&
+      (selected !== node.selected ||
+        expanded !== node.expanded ||
+        !deepEquals(children, node.children))
     ) {
       return {
         selected: node.selected,
