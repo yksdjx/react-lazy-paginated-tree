@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
+import deepEquals from 'fast-deep-equal';
 import type { Node, TreeState, TreeProps } from '../types';
 import TreeNode from './TreeNode';
 
@@ -23,6 +24,18 @@ const DEFAULT_INDENT_WIDTH = 20;
 const DEFAULT_DEPTH = 0;
 
 class Tree extends Component<TreeProps, TreeState> {
+  static getDerivedStateFromProps(
+    { nodes, parse }: TreeProps,
+    state: TreeState,
+  ) {
+    if (!deepEquals(state.nodes, nodes)) {
+      return {
+        nodes: parse ? parse(nodes) : nodes,
+      };
+    }
+    return null;
+  }
+
   // initialize state and allow for loadChildren override (for pagination)
   constructor(props: TreeProps) {
     super(props);
@@ -38,10 +51,8 @@ class Tree extends Component<TreeProps, TreeState> {
     pageLimit?: number, // eslint-disable-line
   ): Promise<Array<Node>> => node.children;
 
-  render() {
+  renderChildren = () => {
     const {
-      style,
-      className,
       theme = defaultTheme,
       indentWidth,
       List,
@@ -58,33 +69,39 @@ class Tree extends Component<TreeProps, TreeState> {
       toggleCallback,
       selectCallback,
     } = this.props;
-
     const { nodes } = this.state;
+
+    return nodes.map((node: Node, index: number) => (
+      <TreeNode
+        key={node.id || index}
+        depth={DEFAULT_DEPTH}
+        node={node}
+        theme={theme}
+        indentWidth={indentWidth || DEFAULT_INDENT_WIDTH}
+        List={List || DefaultList}
+        ListItem={ListItem || DefaultListItem}
+        Expander={Expander || DefaultExpander}
+        Checkbox={Checkbox || DefaultCheckbox}
+        Body={Body || DefaultBody}
+        Paginator={Paginator || DefaultPaginator}
+        Loading={Loading || DefaultLoading}
+        DepthPadding={DepthPadding || DefaultDepthPadding}
+        loadChildren={loadChildren || this.loadChildren}
+        parse={parse}
+        pageLimit={pageLimit}
+        toggleCallback={toggleCallback}
+        selectCallback={selectCallback}
+      />
+    ));
+  };
+
+  render() {
+    const { style, className, theme = defaultTheme } = this.props;
+    const children = this.renderChildren();
 
     return (
       <ul style={{ ...theme.treeStyle, ...style }} className={className}>
-        {nodes.map((node: Node, index: number) => (
-          <TreeNode
-            key={node.id || index}
-            depth={DEFAULT_DEPTH}
-            node={node}
-            theme={theme}
-            indentWidth={indentWidth || DEFAULT_INDENT_WIDTH}
-            List={List || DefaultList}
-            ListItem={ListItem || DefaultListItem}
-            Expander={Expander || DefaultExpander}
-            Checkbox={Checkbox || DefaultCheckbox}
-            Body={Body || DefaultBody}
-            Paginator={Paginator || DefaultPaginator}
-            Loading={Loading || DefaultLoading}
-            DepthPadding={DepthPadding || DefaultDepthPadding}
-            loadChildren={loadChildren || this.loadChildren}
-            parse={parse}
-            pageLimit={pageLimit}
-            toggleCallback={toggleCallback}
-            selectCallback={selectCallback}
-          />
-        ))}
+        {children}
       </ul>
     );
   }

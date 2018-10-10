@@ -7,6 +7,25 @@ import type { Node, TreeNodeProps, TreeNodeState, Event } from '../types';
 import { hasChildren, shouldShowMore, isFullyFetched } from '../util';
 
 class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
+  static getDerivedStateFromProps(
+    { node }: TreeNodeProps,
+    state: TreeNodeState,
+  ) {
+    const { selected, expanded, children } = state;
+    if (
+      selected !== node.selected ||
+      expanded !== node.expanded ||
+      !deepEquals(children, node.children)
+    ) {
+      return {
+        selected: node.selected,
+        expanded: node.expanded,
+        children: node.children,
+      };
+    }
+    return null;
+  }
+
   constructor(props: TreeNodeProps) {
     super(props);
     const { node } = props;
