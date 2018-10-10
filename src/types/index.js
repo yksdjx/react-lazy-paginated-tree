@@ -31,10 +31,6 @@ export type Cache = Object;
 
 export type Event = Object;
 
-export type TreeState = {
-  nodes: Array<Node>,
-};
-
 export type TreeProps = {
   nodes: Array<Node>,
   pageLimit?: number,

@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import type { Node, TreeState, TreeProps } from '../types';
+import type { Node, TreeProps } from '../types';
 import TreeNode from './TreeNode';
 
 // default components and theme
@@ -22,7 +22,7 @@ import '../animations/index.css';
 const DEFAULT_INDENT_WIDTH = 20;
 const DEFAULT_DEPTH = 0;
 
-class Tree extends Component<TreeProps, TreeState> {
+class Tree extends Component<TreeProps> {
   // default loadChildren implementation to be overridden via props
   loadChildren = async (
     node: Node,
