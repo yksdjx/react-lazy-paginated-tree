@@ -7,6 +7,9 @@ import type { Node, TreeNodeProps, TreeNodeState, Event } from '../types';
 import { hasChildren, shouldShowMore, isFullyFetched } from '../util';
 
 class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
+  // Each TreeNode contains its own state, but props are the real
+  // source of truth so we need to ensure that important prop changes
+  // (selected, expanded, children) are also reflected in the local state.
   static getDerivedStateFromProps(
     { node }: TreeNodeProps,
     state: TreeNodeState,
@@ -39,6 +42,8 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
     };
   }
 
+  // PERFORMANCE OPTIMIZATION: only update the node when pertinent component
+  // state changes
   shouldComponentUpdate(nextProps: TreeNodeProps, nextState: TreeNodeState) {
     return !deepEquals(this.state, nextState);
   }
@@ -178,6 +183,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       Loading,
       DepthPadding,
     }: TreeNodeProps = this.props;
+
     const {
       expanderLoading,
       paginatorLoading,
