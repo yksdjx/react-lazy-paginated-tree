@@ -31,10 +31,6 @@ export type Cache = Object;
 
 export type Event = Object;
 
-export type TreeState = {
-  nodes: Array<Node>,
-};
-
 export type TreeProps = {
   nodes: Array<Node>,
   pageLimit?: number,
@@ -58,6 +54,7 @@ export type TreeProps = {
   loadChildren?: Function,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 
 export type TreeNodeProps = {
@@ -78,6 +75,7 @@ export type TreeNodeProps = {
   pageLimit: ?number,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 
 export type TreeNodeState = {

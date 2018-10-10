@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import type { Node, TreeState, TreeProps } from '../types';
+import type { Node, TreeProps } from '../types';
 import TreeNode from './TreeNode';
 
 // default components and theme
@@ -22,16 +22,7 @@ import '../animations/index.css';
 const DEFAULT_INDENT_WIDTH = 20;
 const DEFAULT_DEPTH = 0;
 
-class Tree extends Component<TreeProps, TreeState> {
-  // initialize state and allow for loadChildren override (for pagination)
-  constructor(props: TreeProps) {
-    super(props);
-    const { nodes, parse } = props;
-    this.state = {
-      nodes: parse ? parse(nodes) : nodes,
-    };
-  }
-
+class Tree extends Component<TreeProps> {
   // default loadChildren implementation to be overridden via props
   loadChildren = async (
     node: Node,
@@ -42,6 +33,7 @@ class Tree extends Component<TreeProps, TreeState> {
     const {
       style,
       className,
+      nodes,
       theme = defaultTheme,
       indentWidth,
       List,
@@ -57,13 +49,14 @@ class Tree extends Component<TreeProps, TreeState> {
       pageLimit,
       toggleCallback,
       selectCallback,
+      useLocalState,
     } = this.props;
 
-    const { nodes } = this.state;
+    const parsedNodes = parse ? parse(nodes) : nodes;
 
     return (
       <ul style={{ ...theme.treeStyle, ...style }} className={className}>
-        {nodes.map((node: Node, index: number) => (
+        {parsedNodes.map((node: Node, index: number) => (
           <TreeNode
             key={node.id || index}
             depth={DEFAULT_DEPTH}
@@ -83,6 +76,7 @@ class Tree extends Component<TreeProps, TreeState> {
             pageLimit={pageLimit}
             toggleCallback={toggleCallback}
             selectCallback={selectCallback}
+            useLocalState={useLocalState}
           />
         ))}
       </ul>

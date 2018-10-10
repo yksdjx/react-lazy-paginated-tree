@@ -39,7 +39,7 @@ import { Tree, SampleTree } from 'react-lazy-paginated-tree';
 
 class ReactLazyPaginatedTree extends Component {
   render() {
-    return <Tree nodes={SampleTree} />;
+    return <Tree nodes={SampleTree} useLocalState={true} />;
   }
 }
 
@@ -84,6 +84,10 @@ Format (one node with one child):
   selected: false,
 },
 ```
+
+##### State Props
+
+* `useLocalState: boolean`: boolean that if set to TRUE will leverage local tree state only and not reflect prop changes. If you are using a state management framework such as Redux do NOT set this property to true.
 
 ##### Lazy Loading Props
 
@@ -198,6 +202,7 @@ export type TreeProps = {
   loadChildren?: Function,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 ```
 
@@ -230,6 +235,7 @@ export type TreeNodeProps = {
   pageLimit: ?number,
   selectCallback?: Function,
   toggleCallback?: Function,
+  useLocalState?: boolean,
 };
 ```
 
