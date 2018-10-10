@@ -50,6 +50,7 @@ class Tree extends Component<TreeProps> {
       toggleCallback,
       selectCallback,
       useLocalState,
+      paginated,
     } = this.props;
 
     const parsedNodes = parse ? parse(nodes) : nodes;
@@ -77,6 +78,7 @@ class Tree extends Component<TreeProps> {
             toggleCallback={toggleCallback}
             selectCallback={selectCallback}
             useLocalState={useLocalState}
+            paginated={paginated}
           />
         ))}
       </ul>

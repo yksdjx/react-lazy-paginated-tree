@@ -96,7 +96,8 @@ Format (one node with one child):
 
 ##### Pagination Props
 
-* `pageLimit: number`: pagination page limit. If specified the tree will attempt to paginate by concatenating existing nodes with nodes returned by loadChildren.
+* `paginated: boolean`: If true the tree will attempt to paginate by concatenating existing nodes with nodes returned by loadChildren.
+* `pageLimit: number`: pagination page limit.
 
 ##### Change Tracking Props
 
@@ -203,6 +204,7 @@ export type TreeProps = {
   selectCallback?: Function,
   toggleCallback?: Function,
   useLocalState?: boolean,
+  paginated?: boolean,
 };
 ```
 
@@ -236,6 +238,7 @@ export type TreeNodeProps = {
   selectCallback?: Function,
   toggleCallback?: Function,
   useLocalState?: boolean,
+  paginated?: boolean,
 };
 ```
 

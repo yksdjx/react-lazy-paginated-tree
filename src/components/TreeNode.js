@@ -184,7 +184,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       Paginator,
       Loading,
       DepthPadding,
-      loadChildren,
+      paginated,
     }: TreeNodeProps = this.props;
 
     const {
@@ -246,7 +246,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
                 {paginatorLoading && <Loading theme={theme} node={node} />}
                 {/* Paginator: Overridable "load more" pagination button */}
                 {!paginatorLoading &&
-                  loadChildren &&
+                  paginated &&
                   shouldShowMore(node, children.length) && (
                     <Paginator
                       theme={theme}
