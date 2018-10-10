@@ -7,7 +7,6 @@ export { Tree, TreeNode, SampleTree };
 
 export type {
   TreeProps,
-  TreeState,
   TreeNodeProps,
   TreeNodeState,
   Node,

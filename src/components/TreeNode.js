@@ -17,7 +17,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   ) {
     const { selected, expanded, children } = state;
     if (
-      useLocalState &&
+      !useLocalState &&
       (selected !== node.selected ||
         expanded !== node.expanded ||
         !deepEquals(children, node.children))
