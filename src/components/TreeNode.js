@@ -75,9 +75,21 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   // loaded and set expanded state.
   // fires toggleCallback() prop with event and node
   toggle = async (e: Event, node: Node): Promise<void> => {
-    const { pageLimit, parse, loadChildren, toggleCallback } = this.props;
+    const {
+      pageLimit,
+      parse,
+      loadChildren,
+      toggleCallback,
+      paginated,
+    } = this.props;
     const state: TreeNodeState = { ...this.state };
-    if (state.children.length === 0 && hasChildren(node)) {
+    if (
+      // nothing is loaded so we should load
+      (state.children.length === 0 && hasChildren(node)) ||
+      // we're not paginating and the children aren't fully loaded so let's load them
+      // i.e. when you have nodes that have shared identities
+      (!paginated && state.children.length < node.numChildren)
+    ) {
       state.page += 1;
       const loadedChildren = await loadChildren(node, pageLimit);
       state.children = parse ? parse(loadedChildren) : loadedChildren;
