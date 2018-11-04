@@ -34,28 +34,39 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
   constructor(props: TreeNodeProps) {
     super(props);
     const { node } = props;
+    const { expanded, selected, children, page } = node;
     this.state = {
       expanderLoading: false,
       paginatorLoading: false,
-      expanded: node.expanded,
-      selected: node.selected,
-      children: node.children,
-      page: node.page,
+      expanded,
+      selected,
+      children,
+      page,
     };
   }
 
-  // PERFORMANCE OPTIMIZATION: only update the node when pertinent component
-  // state changes
+  // PERFORMANCE: only update the node when pertinent component
+  // state changes. This synergizes with getDerivedStateFromProps
   shouldComponentUpdate(nextProps: TreeNodeProps, nextState: TreeNodeState) {
     return !deepEquals(this.state, nextState);
   }
 
   // handler for paginating on a list of siblings. Determine if more siblings need to be
-  // loaded and append them to the end of the list
+  // loaded and append them to the end of the list. This method is only called
+  // if we are paginating
   loadMore = async (e: Event, node: Node) => {
-    const { pageLimit, parse, loadChildren } = this.props;
+    const {
+      paginated,
+      pageLimit,
+      parse,
+      loadChildren,
+    }: TreeNodeProps = this.props;
     const state: TreeNodeState = { ...this.state };
-    if (!isFullyFetched(node, state.children.length) && pageLimit) {
+    if (
+      !isFullyFetched(node, state.children.length) &&
+      paginated &&
+      pageLimit
+    ) {
       state.page += 1;
       const loadedChildren = await loadChildren(node, pageLimit);
       state.children = state.children.concat(
@@ -204,7 +215,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       paginatorLoading,
       expanded,
       selected,
-    } = this.state;
+    }: TreeNodeState = this.state;
 
     const children = this.renderChildren();
 

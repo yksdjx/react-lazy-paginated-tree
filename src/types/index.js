@@ -32,6 +32,7 @@ export type Cache = Object;
 export type Event = Object;
 
 export type TreeProps = {
+  depth: number,
   nodes: Array<Node>,
   pageLimit?: number,
   parse?: Function,
