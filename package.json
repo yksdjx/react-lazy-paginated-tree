@@ -18,14 +18,14 @@
   "main": "dist/index.js",
   "peerDependencies": {
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "babel-polyfill": "^6.26.0"
+    "react-dom": "^16.3.2"
   },
   "dependencies": {
     "@material-ui/core": "^1.5.1",
     "@material-ui/icons": "^2.0.3",
     "autoprefixer": "^9.1.1",
     "fast-deep-equal": "^2.0.1",
+    "idempotent-babel-polyfill": "^7.0.0",
     "postcss-js": "^2.0.0",
     "react-addons-css-transition-group": "^15.6.2"
   },
