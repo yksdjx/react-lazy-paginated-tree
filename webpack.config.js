@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: ['./src/index.js'],
+  entry: ['idempotent-babel-polyfill', './src/index.js'],
   devServer: {
     contentBase: './dist',
   },
