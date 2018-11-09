@@ -347,12 +347,27 @@ export type ListProps = {
 };
 ```
 
+##### : PaginatorProps
+
+```
+export type PaginatorProps = {
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
+  indentWidth: number,
+  depth: number,
+};
+```
+
 ##### : LoadingProps
 
 ```
 export type LoadingProps = {
   theme: Theme,
   node: Node,
+  indentWidth: number,
+  depth: number,
 };
 ```
 

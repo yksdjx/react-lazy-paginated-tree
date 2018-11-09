@@ -114,6 +114,15 @@ export type ExpanderProps = {
   expanded: boolean,
 };
 
+export type PaginatorProps = {
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
+  indentWidth: number,
+  depth: number,
+};
+
 export type ListItemProps = {
   theme: Theme,
   node: Node,
@@ -131,6 +140,8 @@ export type ListProps = {
 export type LoadingProps = {
   theme: Theme,
   node: Node,
+  indentWidth: number,
+  depth: number,
 };
 
 export type DepthPaddingProps = {
