@@ -266,7 +266,14 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
                 {/* render children here */}
                 {children}
                 {/* Loading: Overridable loading bar for pagination */}
-                {paginatorLoading && <Loading theme={theme} node={node} />}
+                {paginatorLoading && (
+                  <Loading
+                    theme={theme}
+                    node={node}
+                    indentWidth={indentWidth}
+                    depth={depth}
+                  />
+                )}
                 {/* Paginator: Overridable "load more" pagination button */}
                 {!paginatorLoading &&
                   paginated &&
@@ -274,6 +281,8 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
                     <Paginator
                       theme={theme}
                       node={node}
+                      indentWidth={indentWidth}
+                      depth={depth}
                       onClick={e =>
                         this.handleLoadMore(
                           e,

@@ -10,6 +10,7 @@ const ListItem = ({ theme, onClick, onKeyPress, children }: ListItemProps) => (
     onClick={onClick}
     onKeyPress={onKeyPress}
     style={theme.listItemStyle}
+    className={theme.listItemClassName}
   >
     {children}
   </MUIListItem>

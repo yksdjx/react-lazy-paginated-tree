@@ -25,6 +25,16 @@ export type Theme = {
   loadingStyle: Object,
   loadingTextStyle: Object,
   listStyle: Object,
+  bodyClassName: ?String,
+  bodyTextClassName: ?String,
+  checkboxClassName: ?String,
+  expanderClassName: ?String,
+  listClassName: ?String,
+  listItemClassName: ?String,
+  loadingClassName: ?String,
+  loadingTextClassName: ?String,
+  paginatorClassName: ?String,
+  paginatorTextClassName: ?String,
 };
 
 export type Cache = Object;
@@ -114,6 +124,15 @@ export type ExpanderProps = {
   expanded: boolean,
 };
 
+export type PaginatorProps = {
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
+  indentWidth: number,
+  depth: number,
+};
+
 export type ListItemProps = {
   theme: Theme,
   node: Node,
@@ -131,6 +150,8 @@ export type ListProps = {
 export type LoadingProps = {
   theme: Theme,
   node: Node,
+  indentWidth: number,
+  depth: number,
 };
 
 export type DepthPaddingProps = {

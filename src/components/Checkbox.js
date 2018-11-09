@@ -9,6 +9,7 @@ import type { CheckboxProps } from '../types';
 const Checkbox = ({ theme, selected }: CheckboxProps) => (
   <MUICheckbox
     style={theme.checkboxStyle}
+    className={theme.checkboxClassName}
     type="checkbox"
     tabIndex={0}
     checked={Boolean(selected)}

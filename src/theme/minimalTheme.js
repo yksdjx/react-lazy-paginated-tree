@@ -60,6 +60,16 @@ const theme: Theme = prefixer({
     paddingTop: 0,
     paddingBottom: 0,
   },
+  bodyClassName: null,
+  bodyTextClassName: null,
+  checkboxClassName: null,
+  expanderClassName: null,
+  listClassName: null,
+  listItemClassName: null,
+  loadingClassName: null,
+  loadingTextClassName: null,
+  paginatorClassName: null,
+  paginatorTextClassName: null,
 });
 
 export default theme;

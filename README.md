@@ -286,6 +286,16 @@ export type Theme = {
   loadingStyle: Object,
   loadingTextStyle: Object,
   listStyle: Object,
+  bodyClassName: ?String,
+  bodyTextClassName: ?String,
+  checkboxClassName: ?String,
+  expanderClassName: ?String,
+  listClassName: ?String,
+  listItemClassName: ?String,
+  loadingClassName: ?String,
+  loadingTextClassName: ?String,
+  paginatorClassName: ?String,
+  paginatorTextClassName: ?String,
 };
 ```
 
@@ -347,12 +357,27 @@ export type ListProps = {
 };
 ```
 
+##### : PaginatorProps
+
+```
+export type PaginatorProps = {
+  theme: Theme,
+  node: Node,
+  onClick: Function,
+  onKeyPress: Function,
+  indentWidth: number,
+  depth: number,
+};
+```
+
 ##### : LoadingProps
 
 ```
 export type LoadingProps = {
   theme: Theme,
   node: Node,
+  indentWidth: number,
+  depth: number,
 };
 ```
 
