@@ -9,6 +9,7 @@ import type { ExpanderProps } from '../types';
 const Expander = ({ theme, onClick, onKeyPress, expanded }: ExpanderProps) => (
   <MUIListItemIcon
     style={theme.expanderStyle}
+    className={theme.expanderClassName}
     onClick={onClick}
     onKeyPress={onKeyPress}
     tabIndex={0}

@@ -286,6 +286,16 @@ export type Theme = {
   loadingStyle: Object,
   loadingTextStyle: Object,
   listStyle: Object,
+  bodyClassName: ?String,
+  bodyTextClassName: ?String,
+  checkboxClassName: ?String,
+  expanderClassName: ?String,
+  listClassName: ?String,
+  listItemClassName: ?String,
+  loadingClassName: ?String,
+  loadingTextClassName: ?String,
+  paginatorClassName: ?String,
+  paginatorTextClassName: ?String,
 };
 ```
 

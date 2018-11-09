@@ -7,11 +7,16 @@ import MUITypography from '@material-ui/core/Typography';
 import type { LoadingProps, Theme } from '../types';
 
 const Typography = ({ theme }: { theme: Theme }) => (
-  <MUITypography style={theme.loadingTextStyle}>Loading...</MUITypography>
+  <MUITypography
+    style={theme.loadingTextStyle}
+    className={theme.loadingTextClassName}
+  >
+    Loading...
+  </MUITypography>
 );
 
 const Loading = ({ theme }: LoadingProps) => (
-  <MUIListItem style={theme.loadingStyle}>
+  <MUIListItem style={theme.loadingStyle} className={theme.loadingClassName}>
     <MUIListItemText disableTypography primary={<Typography theme={theme} />} />
   </MUIListItem>
 );
