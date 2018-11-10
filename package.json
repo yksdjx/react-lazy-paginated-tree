@@ -69,7 +69,7 @@
     "watch": "webpack --watch",
     "start":
       "webpack --watch & webpack-dev-server --port 8090 --open-page 'index.html'",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --mode=production",
     "test": "jest"
   },
   "author": "Bowei Han",
