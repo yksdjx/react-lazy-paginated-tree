@@ -1,12 +1,8 @@
 // @flow
 
-import postcssJs from 'postcss-js';
-import autoprefixer from 'autoprefixer';
 import type { Theme } from '../types';
 
-const prefixer = postcssJs.sync([autoprefixer]);
-
-const theme: Theme = prefixer({
+const theme: Theme = {
   treeStyle: {
     padding: 0,
   },
@@ -70,6 +66,6 @@ const theme: Theme = prefixer({
   loadingTextClassName: null,
   paginatorClassName: null,
   paginatorTextClassName: null,
-});
+};
 
 export default theme;
