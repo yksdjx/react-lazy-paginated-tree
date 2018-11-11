@@ -1,8 +1,7 @@
 {
   "name": "react-lazy-paginated-tree",
   "version": "0.7.0",
-  "description":
-    "Customizable React Tree-View with Lazy Loading and Pagination",
+  "description": "Customizable React Tree-View with Lazy Loading and Pagination",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:boweihan/react-lazy-paginated-tree.git"
@@ -67,9 +66,9 @@
   },
   "scripts": {
     "watch": "webpack --watch",
-    "start":
-      "webpack --watch & webpack-dev-server --port 8090 --open-page 'index.html'",
-    "build": "webpack --config webpack.config.js",
+    "start": "webpack --watch & webpack-dev-server --port 8090 --open-page 'index.html'",
+    "build": "webpack --config webpack.config.js --mode=production",
+    "build:profile": "webpack --config webpack.config.js --mode=production --profile --json > buildstats.json",
     "test": "jest"
   },
   "author": "Bowei Han",
