@@ -4,7 +4,7 @@ exports[`allows for component overrides 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
@@ -19,12 +19,12 @@ exports[`allows for method overrides 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -42,8 +42,8 @@ exports[`allows for method overrides 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -55,16 +55,14 @@ exports[`allows for method overrides 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -72,18 +70,25 @@ exports[`allows for method overrides 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -98,12 +103,13 @@ exports[`allows for method overrides 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -117,33 +123,35 @@ exports[`allows for method overrides 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -159,22 +167,22 @@ exports[`allows for method overrides 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
     <span />
   </ul>
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -192,8 +200,8 @@ exports[`allows for method overrides 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -205,16 +213,14 @@ exports[`allows for method overrides 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -222,18 +228,25 @@ exports[`allows for method overrides 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -248,12 +261,13 @@ exports[`allows for method overrides 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -267,33 +281,35 @@ exports[`allows for method overrides 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -309,15 +325,15 @@ exports[`allows for method overrides 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -330,12 +346,12 @@ exports[`renders a sample tree 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -353,8 +369,8 @@ exports[`renders a sample tree 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -366,16 +382,14 @@ exports[`renders a sample tree 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -383,18 +397,25 @@ exports[`renders a sample tree 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -409,12 +430,13 @@ exports[`renders a sample tree 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -428,33 +450,35 @@ exports[`renders a sample tree 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -470,22 +494,22 @@ exports[`renders a sample tree 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
     <span />
   </ul>
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -503,8 +527,8 @@ exports[`renders a sample tree 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -516,16 +540,14 @@ exports[`renders a sample tree 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -533,18 +555,25 @@ exports[`renders a sample tree 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -559,12 +588,13 @@ exports[`renders a sample tree 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -578,33 +608,35 @@ exports[`renders a sample tree 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -620,15 +652,15 @@ exports[`renders a sample tree 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -641,12 +673,12 @@ exports[`renders the correct pagination structure 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -664,8 +696,8 @@ exports[`renders the correct pagination structure 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -677,16 +709,14 @@ exports[`renders the correct pagination structure 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -694,18 +724,25 @@ exports[`renders the correct pagination structure 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -720,12 +757,13 @@ exports[`renders the correct pagination structure 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -739,33 +777,35 @@ exports[`renders the correct pagination structure 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -781,22 +821,22 @@ exports[`renders the correct pagination structure 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
     <span />
   </ul>
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -814,8 +854,8 @@ exports[`renders the correct pagination structure 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -827,16 +867,14 @@ exports[`renders the correct pagination structure 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -844,18 +882,25 @@ exports[`renders the correct pagination structure 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -870,12 +915,13 @@ exports[`renders the correct pagination structure 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -889,33 +935,35 @@ exports[`renders the correct pagination structure 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -931,15 +979,15 @@ exports[`renders the correct pagination structure 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -952,12 +1000,12 @@ exports[`renders with a different indent width 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -975,8 +1023,8 @@ exports[`renders with a different indent width 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -988,16 +1036,14 @@ exports[`renders with a different indent width 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -1005,18 +1051,25 @@ exports[`renders with a different indent width 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -1031,12 +1084,13 @@ exports[`renders with a different indent width 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -1050,33 +1104,35 @@ exports[`renders with a different indent width 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -1092,22 +1148,22 @@ exports[`renders with a different indent width 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
     <span />
   </ul>
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1125,8 +1181,8 @@ exports[`renders with a different indent width 1`] = `
       Object {
         "backgroundColor": "#f3f3f3",
         "margin": "2px 0",
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
     tabIndex="0"
@@ -1138,16 +1194,14 @@ exports[`renders with a different indent width 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -1155,18 +1209,25 @@ exports[`renders with a different indent width 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -1181,12 +1242,13 @@ exports[`renders with a different indent width 1`] = `
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={Object {}}
           viewBox="0 0 24 24"
         >
@@ -1200,33 +1262,35 @@ exports[`renders with a different indent width 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
-          "padding": "0",
+          "padding": 0,
         }
       }
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -1242,15 +1306,15 @@ exports[`renders with a different indent width 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -1263,12 +1327,12 @@ exports[`renders with a different theme 1`] = `
 <ul
   style={
     Object {
-      "padding": "0",
+      "padding": 0,
     }
   }
 >
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1297,17 +1361,15 @@ exports[`renders with a different theme 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
           "fill": "black",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -1315,18 +1377,25 @@ exports[`renders with a different theme 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -1339,23 +1408,24 @@ exports[`renders with a different theme 1`] = `
       onTouchStart={[Function]}
       style={
         Object {
-          "height": "30px",
-          "width": "30px",
+          "height": 30,
+          "width": 30,
         }
       }
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={
             Object {
               "fill": "black",
-              "fontSize": "20px",
+              "fontSize": 20,
             }
           }
           viewBox="0 0 24 24"
@@ -1370,18 +1440,19 @@ exports[`renders with a different theme 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
@@ -1391,12 +1462,13 @@ exports[`renders with a different theme 1`] = `
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -1412,22 +1484,22 @@ exports[`renders with a different theme 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
     <span />
   </ul>
   <div
-    className="MuiButtonBase-root-11 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
+    className="MuiButtonBase-root-12 MuiListItem-root-1 MuiListItem-default-4 MuiListItem-gutters-8 MuiListItem-button-9"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1456,17 +1528,15 @@ exports[`renders with a different theme 1`] = `
         }
       }
     />
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root-15 MuiListItemIcon-root-14"
-      focusable="false"
+    <div
+      className="MuiListItemIcon-root-15"
       onClick={[Function]}
       onKeyPress={[Function]}
       style={
         Object {
           "display": "inline-block",
           "fill": "black",
-          "marginRight": "0",
+          "marginRight": 0,
           "minWidth": "20px",
           "textAlign": "center",
           "width": "20px",
@@ -1474,18 +1544,25 @@ exports[`renders with a different theme 1`] = `
       }
       tabIndex={0}
       type="button"
-      viewBox="0 0 24 24"
     >
-      <path
-        d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-      />
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-16"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+    </div>
     <span
-      className="MuiButtonBase-root-11 MuiIconButton-root-31 MuiSwitchBase-root-27 MuiCheckbox-root-22 MuiCheckbox-colorPrimary-25"
+      className="MuiButtonBase-root-12 MuiIconButton-root-35 MuiPrivateSwitchBase-root-31 MuiCheckbox-root-25 MuiCheckbox-colorPrimary-29"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -1498,23 +1575,24 @@ exports[`renders with a different theme 1`] = `
       onTouchStart={[Function]}
       style={
         Object {
-          "height": "30px",
-          "width": "30px",
+          "height": 30,
+          "width": 30,
         }
       }
       tabIndex={null}
     >
       <span
-        className="MuiIconButton-label-36"
+        className="MuiIconButton-label-40"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-15"
+          className="MuiSvgIcon-root-16"
           focusable="false"
+          role="presentation"
           style={
             Object {
               "fill": "black",
-              "fontSize": "20px",
+              "fontSize": 20,
             }
           }
           viewBox="0 0 24 24"
@@ -1529,18 +1607,19 @@ exports[`renders with a different theme 1`] = `
         </svg>
         <input
           checked={false}
-          className="MuiSwitchBase-input-30"
+          className="MuiPrivateSwitchBase-input-34"
+          data-indeterminate={false}
           onChange={[Function]}
           tabIndex={0}
           type="checkbox"
         />
       </span>
       <span
-        className="MuiTouchRipple-root-37"
+        className="MuiTouchRipple-root-86"
       />
     </span>
     <div
-      className="MuiListItemText-root-44"
+      className="MuiListItemText-root-41"
       role="button"
       style={
         Object {
@@ -1550,12 +1629,13 @@ exports[`renders with a different theme 1`] = `
       tabIndex={0}
     >
       <span
-        className="MuiTypography-root-50 MuiTypography-subheading-57 MuiListItemText-primary-47"
+        className="MuiTypography-root-47 MuiTypography-subheading-54 MuiListItemText-primary-44"
       >
         <p
+          className={null}
           style={
             Object {
-              "padding": "0",
+              "padding": 0,
               "wordWrap": "break-word",
             }
           }
@@ -1571,15 +1651,15 @@ exports[`renders with a different theme 1`] = `
       </span>
     </div>
     <span
-      className="MuiTouchRipple-root-37"
+      className="MuiTouchRipple-root-86"
     />
   </div>
   <ul
-    className="MuiList-root-75 MuiList-padding-76"
+    className="MuiList-root-82 MuiList-padding-83"
     style={
       Object {
-        "paddingBottom": "0",
-        "paddingTop": "0",
+        "paddingBottom": 0,
+        "paddingTop": 0,
       }
     }
   >
