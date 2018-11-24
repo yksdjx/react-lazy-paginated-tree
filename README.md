@@ -16,16 +16,21 @@ React tree-view component built for performance, customizability and large data 
 ## Install
 
 ```
-npm install react-lazy-paginated-tree --save
+npm install --save react-lazy-paginated-tree
 ```
 
 ## Dependencies
 
 This library depends on:
 
-* [babel-preset-react](https://www.npmjs.com/package/babel-preset-react)
+* [React 16.x](https://github.com/facebook/react)
+* [Material UI 1.x || 3.x](https://github.com/mui-org/material-ui)
 
 Please ensure that these are included in your project.
+
+```
+npm install --save react react-dom @material-ui/core
+```
 
 ## Quick Start
 
@@ -390,6 +395,14 @@ export type DepthPaddingProps = {
   children: any,
 };
 ```
+
+## Build
+
+```
+npm run build
+```
+
+This command will run the production build and output the results to `dist/index.js`. The maximum build size is capped at 15kb, minified and gzipped.
 
 ## License
 
