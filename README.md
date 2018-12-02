@@ -19,6 +19,30 @@ React tree-view component built for performance, customizability and large data 
 npm install react-lazy-paginated-tree --save
 ```
 
+## Running the Example project
+
+The `/example` project can be used as a development environment for the RLPT package.
+To run the project, navigate to the `/example` folder and run the following commands.
+
+```
+npm install
+npm start
+```
+
+To develop on a local development build of RLPT the easiest thing to do at the moment
+is to symlink the package to the module in `/example`. To do this:
+
+```
+cd react-lazy-paginated-tree
+npm link
+cd react-lazy-paginated-tree/example
+npm link react-lazy-paginated-tree
+```
+
+This will serve the build assets in `dist` so make sure to run `npm run build` to update the assets.
+
+For more information on creating npm symlinks - https://docs.npmjs.com/cli/link.
+
 ## Dependencies
 
 This library depends on:
