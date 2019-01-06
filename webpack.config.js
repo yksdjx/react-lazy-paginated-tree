@@ -2,27 +2,34 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: ['idempotent-babel-polyfill', './src/index.js'],
+  entry: './src/index.js',
+  devServer: {
+    contentBase: './dist',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: 'react-lazy-paginated-tree',
     libraryTarget: 'umd',
   },
-  externals: {
-    react: {
-      root: 'React',
-      commonjs2: 'react',
-      commonjs: 'react',
-      amd: 'react',
+  externals: [
+    {
+      react: {
+        root: 'React',
+        commonjs2: 'react',
+        commonjs: 'react',
+        amd: 'react',
+      },
+      'react-dom': {
+        root: 'ReactDOM',
+        commonjs2: 'react-dom',
+        commonjs: 'react-dom',
+        amd: 'react-dom',
+      },
     },
-    'react-dom': {
-      root: 'ReactDOM',
-      commonjs2: 'react-dom',
-      commonjs: 'react-dom',
-      amd: 'react-dom',
-    },
-  },
+    '@material-ui/core',
+    /@material-ui\/core\/*./,
+  ],
   resolve: {
     extensions: ['.js', '.jsx', '.css'],
   },
@@ -31,18 +38,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            plugins: [
-              'transform-decorators-legacy',
-              'transform-class-properties',
-              'transform-object-rest-spread',
-              'transform-async-to-generator',
-            ],
-            presets: ['babel-preset-env', 'babel-preset-react', 'stage-1'],
-          },
-        },
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
