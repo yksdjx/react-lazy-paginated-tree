@@ -5,7 +5,11 @@ import MUIListItemText from '@material-ui/core/ListItemText';
 import type { BodyProps, Node, Theme } from '../types';
 
 const BodyText = ({ node, theme }: { node: Node, theme: Theme }) => (
-  <p style={theme.bodyTextStyle} className={theme.bodyTextClassName}>
+  <p
+    style={theme.bodyTextStyle}
+    title={`${node.name} (${node.description})`}
+    className={theme.bodyTextClassName}
+  >
     {node.name}
     &nbsp;
     {node.description ? <i>({node.description})</i> : ''}
