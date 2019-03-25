@@ -7,7 +7,7 @@ import type { BodyProps, Node, Theme } from '../types';
 const BodyText = ({ node, theme }: { node: Node, theme: Theme }) => (
   <p
     style={theme.bodyTextStyle}
-    title={`${node.name} (${node.description})`}
+    title={`${node.name} ${node.description ? `(${node.description})` : ''}`}
     className={theme.bodyTextClassName}
   >
     {node.name}
