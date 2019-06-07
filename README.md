@@ -262,6 +262,7 @@ export type TreeNodeProps = {
   toggleCallback?: Function,
   useLocalState?: boolean,
   paginated?: boolean,
+  doubleClickSelect?: boolean,
 };
 ```
 
@@ -367,6 +368,7 @@ export type ListItemProps = {
   node: Node,
   children: any,
   onClick: Function,
+  onDoubleClick: Function,
   onKeyPress: Function,
 };
 ```

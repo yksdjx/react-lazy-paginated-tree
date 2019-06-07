@@ -208,6 +208,7 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
       Loading,
       DepthPadding,
       paginated,
+      doubleClickSelect,
     }: TreeNodeProps = this.props;
 
     const {
@@ -218,14 +219,21 @@ class TreeNode extends Component<TreeNodeProps, TreeNodeState> {
     }: TreeNodeState = this.state;
 
     const children = this.renderChildren();
-
+    //only supports single click OR double click
+    let doubleClickFunction = doubleClickSelect
+      ? e => this.select(e, node)
+      : undefined;
+    let clickFunction = doubleClickSelect
+      ? undefined
+      : e => this.select(e, node);
     return (
       <React.Fragment>
         {/* ListItem: Overridable container component */}
         <ListItem
           theme={theme}
           node={node}
-          onClick={e => this.select(e, node)}
+          onClick={clickFunction}
+          onDoubleClick={doubleClickFunction}
           onKeyPress={e => this.onKeySelect(e, node)}
         >
           {/* DepthPadding: Overridable Component for hierarchical indentation */}
