@@ -130,6 +130,9 @@ Format (one node with one child):
 
 * `toggleCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node expand/collapse event.
 * `selectCallback: Function`: function called with `(e: Event, node: Node)` as a callback to node selection event.
+   * by default, will trigger on the OnClick event of the node. 
+   * if `doubleClickSelect = true` then it will fire on the OnDoubleClick event
+   * does not support both OnClick and OnDoubleClick events for node selection
 
 ##### Style Overrides
 
@@ -262,6 +265,7 @@ export type TreeNodeProps = {
   toggleCallback?: Function,
   useLocalState?: boolean,
   paginated?: boolean,
+  doubleClickSelect?: boolean,
 };
 ```
 
@@ -367,6 +371,7 @@ export type ListItemProps = {
   node: Node,
   children: any,
   onClick: Function,
+  onDoubleClick: Function,
   onKeyPress: Function,
 };
 ```
