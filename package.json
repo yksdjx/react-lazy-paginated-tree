@@ -1,6 +1,6 @@
 {
   "name": "react-lazy-paginated-tree",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Customizable React Tree-View with Lazy Loading and Pagination",
   "repository": {
     "type": "git",
